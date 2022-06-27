@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  margin: 10px;
+
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color:#f2f2f2;
+  padding: 20px;
+  padding-right:200px;
+  padding-left: 200px;
+}
+h3{
+  text-transform: uppercase;
+  color: black;
+}
+button{
+      cursor: pointer;
+      height: 25px;
+      width: 100px;
+      border: none;
+      outline: none;
+      background: linear-gradient(to right,red,blue,red);
+      color: white;
+      background-size: 200% auto;
+      transition: .5s all;
+      margin: 10px;
+    }
+    button:hover{
+      background-position: right center;
+    }
+    body{
+      background-color: red;
+    }
+
+</style>
+<script type="text/javascript">
+  function us() {
+    window.alert("Sucessfully submitted")
+  }
+</script>
+</head>
+<body>
+  <table  height="55px"align="center">
+  <tr>
+     <th><a href="raaz.html"><button>Main page</button></a></th>
+    <th><a href="Home.html"><button>Home</button></a></th>
+   
+    <th><a href="aboutus.html"><button>About us</button></th></a>
+    <th><a href="login.html"><button>Log in</button></a></th>
+  </tr>
+</table>
+
+<h3 align="center">Contact Form</h3>
+
+<div class="container">
+  <form >
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Nepal</option>
+      <option value="canada">India</option>
+      <option value="usa">USA</option>
+      <option value="nepal">Canada</option>
+      <option value="usa">Other</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+   <a href="raaz.html" class="btn" onclick="us()">Submit</a>
+  </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Log in</title>
+	<style type="text/css">
+		button{
+			cursor: pointer;
+			height: 25px;
+			width: 100px;
+			border: none;
+			outline: none;
+			background: linear-gradient(to right,red,blue,red);
+			color: white;
+			background-size: 200% auto;
+			transition: .5s all;
+			margin: 10px;
+		}
+		button:hover{
+			background-position: right center;
+		}
+		body{
+			background-color: #34495e;
+		}
+		.box{
+			width: 300px;
+			padding: 40px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			background: #191919;
+			text-align: center;
+		}
+		.box input[type="text"],.box input[type="password"]{
+			border: 0;
+			background: none;
+			display: block;
+			margin: 20px auto;
+			text-align: center;
+			border: 2px solid #3498db;
+			padding: 14px 10px;
+			width: 200px;
+			outline: none;
+			color: white;
+			border-radius: 24px;
+			transition: 0.25s;
+		}
+		.box h1{
+			color: white;
+			text-transform: uppercase;
+			font-weight: 500;
+		}
+		.btm{
+		border: 0;
+			background: none;
+			display: block;
+			margin: 20px auto;
+			text-align: center;
+			border: 2px solid #3498db;
+			padding: 14px 10px;
+			width: 200px;
+			outline: none;
+			color: white;
+			border-radius: 24px;
+			transition: 0.25s;	
+		}
+		a{
+			text-decoration: none;
+		}
+		.box input[type="submit"]
+		{
+			border: 0;
+			background: none;
+			display: block;
+			margin: 20px auto;
+			text-align: center;
+			border: 2px solid #3498db;
+			padding: 14px 10px;
+			width: 200px;
+			outline: none;
+			color: white;
+			border-radius: 24px;
+			transition: 0.25s;
+		}
+	</style>
+	<script type="text/javascript">
+		function sign() {
+			window.alert("Successfully logged in")
+		}
+	</script>
+</head>
+<body>
+	<table  height="55px"align="center">
+	<tr>
+		<th><a href="raaz.html"><button>Main page</button></a></th>
+		<th><a href="Home.html"><button>Home</button></a></th>
+		<th><a href="cntus.html"><button>Contact us</button></a></th>
+		<th><a href="aboutus.html"><button>About us</button></th></a>
+	</tr>
+</table>
+<form class="box">
+	<h1>Login</h1>
+	<input type="text" placeholder="User name">
+	<input type="password" placeholder="Password">
+	<a href="raaz.html" class="btm" onclick="sign()">Submit</a>
+</form>
+</body>
+</html>

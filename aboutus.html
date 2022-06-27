@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About us</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		button{
+			cursor: pointer;
+			height: 25px;
+			width: 100px;
+			border: none;
+			outline: none;
+			background: linear-gradient(to right,red,blue,red);
+			color: white;
+			background-size: 200% auto;
+			transition: .5s all;
+			margin: 10px;
+		}
+		button:hover{
+			background-position: right center;
+		}
+
+		*{
+			
+			padding: 0;
+			font-family: sans-serif;
+		}
+		.team-section{
+			overflow: hidden;
+			text-align: center;
+			background: #34495e;
+			padding: 60px;
+			background-position: fixed;
+			background-size: cover;
+
+		}
+		.team-section h1{
+			text-transform: uppercase;
+			margin-bottom: 60px;
+			color: white;
+			font-size: 40px; 
+		}
+		.border{
+			display: block;
+			margin: auto;
+			width: 160px;
+			height: 3px;
+			background: #3498db;
+			margin-bottom: 40px;
+		}
+		.ps{
+			margin-bottom: 40px;
+		}
+		.ps a{
+			display: inline-block;
+			margin: 0 30px;
+			width: 160px;
+			height: 160px;
+			overflow: hidden;
+			border-radius: 50%;
+		}
+		.ps a img{
+			width: 100%;
+			height: 100%;
+			filter: grayscale(100%);
+			transition: 0.4s all;
+		}
+		.ps a:hover > img{
+			filter: none;
+		}
+		.section{
+			width: 600px;
+			margin: auto;
+			font-size: 20px;
+			color: white;
+			text-align: justify;
+			height: 0;
+			overflow: hidden;
+		}
+		.name{
+			display: block;
+			margin-bottom: 30px;
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 22px;
+		}
+		.section:target{
+			height: auto;
+		}
+		.fb{
+			border-radius: 50%;
+		}
+		.yt{
+			border-radius: 50%
+		}
+		
+	</style>
+</head>
+<body>
+<div class="team-section">
+	<table  align = "center" height="55px">
+	<tr>
+		
+		<th><a href="raaz.html"><button>Main page</button></a></th>
+		<th><a href="cntus.html"><button>Contact us</button></a></th>
+		<th><a href="home.html"><button>Home</button></th></a>
+		<th><a href="login.html"><button>Log in</button></th></a>
+	</tr>
+</table>
+	<h1>Our team</h1>
+	<span class="border"></span>
+	<div class="ps">
+		<a href="#p1"><img src="p1.jpg" width="200px" height="200px"></a>
+		<a href="#p2"><img src="p2.jpg" width="200px" height="200px"></a>
+		<a href="#p3"><img src="p3.jpg" width="200px" height="200px"></a>
+		<a href="#p4"><img src="p4.jpg" width="200px" height="200px"></a>
+		
+	</div>
+	<div class="section" id="p1">
+		<span class="name">Raaz katwal</span>
+		<span class="border"></span>
+		<p>
+			Hi guys, My name is Raaz katwal.I am 14 years old.I read in class 9'TSEE'(Technical)<br><br>
+			<a href="https://www.facebook.com/raaz.katwal.58"><button ><img src="fb.png" class="fb" width="100px" height="100px"></button></a>
+			<a href="https://www.youtube.com/channel/UC6YN_-o3QLDh3Axe0nfwhqA"><button ><img src="yt.png" class="yt" width="100px" height="100px"></button></a><br><br>
+
+		</p>
+	</div>
+	<div class="section" id="p2">
+		<span class="name">Kabya chalise</span>
+		<span class="border"></span>
+		<p>
+			Hi guys, My name is Kabya chalise.I am 15 years old.I read in class 9'TSEE'(Technical)<br><br>
+			<a href="https://www.facebook.com/kabya.chalise.9"><button ><img src="fb.png" class="fb" width="100px" height="100px"></button></a><br><br>
+		</p>
+	</div>
+	<div class="section" id="p3">
+		<span class="name">Shrabya raj ghimire</span>
+		<span class="border"></span>
+		<p>
+			Hi guys, My name is Shrabya  ghimire.I am 14 years old.I read in class 9'TSEE'(Technical)<br><br>
+			<a href="https://www.facebook.com/shrabyaraj.ghimire"><button ><img src="fb.png" class="fb" width="100px" height="100px"></button></a>
+			<a href="https://www.youtube.com/channel/UCA2_Hgubt9GxRPlt9pprPaA"><button><img src="yt.png" class="yt" width="100px" height="100px"></button></a><br><br>
+
+		</p>
+	</div>
+	<div class="section" id="p4">
+		<span class="name">Pritam karki</span>
+		<span class="border"></span>
+		<p>
+			Hi guys, My name is Pritam karki Jr.I am 14 years old.I read in class 9'TSEE'(Technical)<br><br>
+			<a href="https://www.facebook.com/pritam.karki.jr10"><button ><img src="fb.png" class="fb" width="100px" height="100px"></button></a><br><br>
+		</p>
+	</div>
+</div>
+</body>
+</html>
